@@ -1,0 +1,61 @@
+{
+	"name": "TimerEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 450451432406435
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TimerText",
+					"sid": 151941430632863,
+					"parameters": {
+						"text": "\"Time: 2:00\""
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 460579749214188,
+					"parameters": {
+						"variable": "TimeRemaining",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TimerText",
+					"sid": 345019970402607,
+					"parameters": {
+						"text": "\"Time: \" & int(TimeRemaining / 60) & \":\" & (TimeRemaining % 60 < 10 ? \"0\" & TimeRemaining % 60 : TimeRemaining % 60)\n"
+					}
+				}
+			],
+			"sid": 916657104285857
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 283721392032692,
+					"parameters": {
+						"variable": "TimeRemaining",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 980438773041699
+		}
+	],
+	"sid": 604806682913580
+}

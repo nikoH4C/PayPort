@@ -1,0 +1,130 @@
+{
+	"name": "Start EVENT SHEET",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 775949270445725,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "STARTbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 843897374128963,
+					"parameters": {
+						"layout": "Illegal"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 237141536474177,
+					"parameters": {
+						"tag": "\"Audio\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 296928181235350,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 343238118099373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 434565862553170,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 801039314985235,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 844523580687524,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 527381350847100
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 327904446806127
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 876686675262872
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 288134750912213,
+					"parameters": {
+						"tag": "\"Audio\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 931311420909350,
+					"parameters": {
+						"audio-file": "Jeremy-Blake-Powerup_-NO-COPYRIGHT-8-bit-Music_1",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Audio\""
+					}
+				}
+			],
+			"sid": 765334466151509
+		}
+	],
+	"sid": 674556041390473
+}

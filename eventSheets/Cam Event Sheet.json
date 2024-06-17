@@ -1,0 +1,974 @@
+{
+	"name": "Cam Event Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 272691209767507,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BackButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 180837994052148,
+					"parameters": {
+						"layout": "Game Main"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 595094428946901,
+					"parameters": {
+						"tag": "\"Kam Music\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 263031841307444,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 709330248070902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 378078026913969,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sarah",
+					"sid": 585539408601250,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 536579608071216,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 608729549067313,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 649560962168841,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 677068850164014,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 881573497047360,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 774234277622441
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 147282169337124,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Maz",
+					"sid": 809637219376641,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 206924082172371,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 584501130438948,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 124352315822679,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 252155140488068,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 932088919766262,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 488038296609699
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 543154830423991,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 939525969652719,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 586033664673097,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 827845510419931,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 804147872337262,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 383609471829400,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 774110034667239,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 186055474604133
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 395910732396009,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite11",
+					"sid": 537062616683109,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 411810707723019,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 697014070745503,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 338016114251299,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 625455609508987,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 177783752956069,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 847298216969820
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 248805148678476,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite12",
+					"sid": 644094856978607,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 550895511944866,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 318674128566880,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 385783874196451,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 579301055297339,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 762612751552675,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 596988763884070
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 831635306090638,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite13",
+					"sid": 271081657457466,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 526609562856768,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 460522070439689,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 197876665544204,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 852233823338757,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 717591722124495,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 104351614405553
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 812567397480958,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 762112327135957,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 288078369722328,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 401190363994871,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 962293333426184,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 693889380697712,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 402989300876569,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 666081461895354
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 345114574660920,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite15",
+					"sid": 161835810196020,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 558370098310386,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 339323595459328,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 491407904706855,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 792042677088707,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 757821444484852,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 258363950363960
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 810893432267617,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite16",
+					"sid": 331618115590137,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 148955427756309,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 652262262022945,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 986937530097264,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 655857498161546,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 639023644778345,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 604706342019135
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 562455308561533,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite17",
+					"sid": 231503691194135,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 536102902760276,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 892979183004276,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 172894143856139,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 210444916896835,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 939613494437059,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 255190507527366
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 166267833621009,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite18",
+					"sid": 801891124701106,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 634706647572631,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 307214913739252,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Shutter"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 322815973401699,
+							"parameters": {
+								"object-to-create": "Sprite28",
+								"layer": "3",
+								"x": "400",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 636904507633144,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 851817068186969,
+							"parameters": {
+								"audio-file": "Shutter Click sound effect (no copyright )",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 954854932448339
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 857800842214676
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 899581986718225,
+					"parameters": {
+						"tag": "\"Kam Music\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 405931522136889,
+					"parameters": {
+						"audio-file": "Kevin MacLeod - Pixelland NO COPYRIGHT 8-bit Music",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Kam Music\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 564511333163973,
+					"parameters": {
+						"tag": "\"Music\""
+					}
+				}
+			],
+			"sid": 441390512713901
+		}
+	],
+	"sid": 129468553319866
+}

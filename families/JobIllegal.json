@@ -1,0 +1,21 @@
+{
+	"name": "JobIllegal",
+	"plugin-id": "Sprite",
+	"sid": 214704230945185,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Chef",
+		"AI",
+		"Lover",
+		"Doctor",
+		"Mechanic",
+		"Reporter",
+		"Princess",
+		"SillyGoose",
+		"Triangle",
+		"Mom",
+		"Bully"
+	]
+}

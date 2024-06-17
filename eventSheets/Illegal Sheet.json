@@ -1,0 +1,238 @@
+{
+	"name": "Illegal Sheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "currentCharacter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 388768357227975
+		},
+		{
+			"eventType": "variable",
+			"name": "PhotoTaken",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 341230194294184
+		},
+		{
+			"eventType": "variable",
+			"name": "RANDOMIZED",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 568520713938493
+		},
+		{
+			"eventType": "variable",
+			"name": "Approved",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 332213942892397
+		},
+		{
+			"eventType": "variable",
+			"name": "Occupation",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 523681986462318
+		},
+		{
+			"eventType": "variable",
+			"name": "Denied",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 126508256221994
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeRemaining",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 345239221802477
+		},
+		{
+			"eventType": "variable",
+			"name": "HighScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 809602768290468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 891305980630864
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 730919806033672,
+					"parameters": {
+						"variable": "Denied",
+						"value": "floor(random(1, 11))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BackButton",
+					"sid": 331456678879975,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 586874402102502,
+					"parameters": {
+						"object-to-create": "Sprite",
+						"layer": "\"Papers\"",
+						"x": "400",
+						"y": "270",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 531423771351438,
+					"parameters": {
+						"object-to-create": "JobIllegal",
+						"layer": "\"TOPTOP\"",
+						"x": "400",
+						"y": "270",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 106271684296763
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 110211426608473,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BackButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 396882902774534,
+					"parameters": {
+						"variable": "currentCharacter",
+						"value": "floor(random(1, 11))"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 803325009984875,
+					"parameters": {
+						"variable": "TimeRemaining",
+						"value": "120"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 677004468529661,
+					"parameters": {
+						"layout": "Game Main"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 527573907979235,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 262041768588060
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 894397509378117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 309435209341302
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 338491307291373,
+					"parameters": {
+						"tag": "\"Music\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 158516542589233,
+					"parameters": {
+						"audio-file": "Kevin-MacLeod-8bit-Dungeon-Boss-NO-COPYRIGHT-8-bit-Music_1",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Music\""
+					}
+				}
+			],
+			"sid": 481083880952384
+		}
+	],
+	"sid": 830885897568194
+}

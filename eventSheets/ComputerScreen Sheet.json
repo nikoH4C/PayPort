@@ -1,0 +1,284 @@
+{
+	"name": "ComputerScreen Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 888435106140894,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BackButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 939872489807558,
+					"parameters": {
+						"layout": "Game Main"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 423244919404674,
+					"parameters": {
+						"tag": "\"Komputer Music\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 654738704064268,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 170906014271615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 512937174596643,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "A4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 369249496049360,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 989396968505828,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 735603013112766,
+							"parameters": {
+								"variable": "Occupation",
+								"comparison": 0,
+								"value": "\"Denied\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 679732751455980,
+							"parameters": {
+								"layout": "Faily"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 706674574104475,
+							"parameters": {
+								"tag": "\"Komputer Music\""
+							}
+						}
+					],
+					"sid": 882202808321037
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 861425667047562
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 992416503516748,
+							"parameters": {
+								"layout": "Illegal"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 665748355898848,
+							"parameters": {
+								"tag": "\"Komputer Music\""
+							}
+						}
+					],
+					"sid": 302882490033325
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 632170984177538,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "A3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 952856066164294,
+					"parameters": {
+						"tag": "\"Komputer Music\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 466710835496771,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 711059999473887,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 670554373201178,
+							"parameters": {
+								"variable": "Occupation",
+								"comparison": 1,
+								"value": "\"Denied\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 958878350681700,
+							"parameters": {
+								"layout": "Faily"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 395817781664014,
+							"parameters": {
+								"tag": "\"Komputer Music\""
+							}
+						}
+					],
+					"sid": 559445418805250
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 834294686708454
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 449156402910299,
+							"parameters": {
+								"layout": "Illegal"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 836468540109030,
+							"parameters": {
+								"tag": "\"Komputer Music\""
+							}
+						}
+					],
+					"sid": 880208805643830
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 782226856251051
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 396299287419841,
+					"parameters": {
+						"tag": "\"Komputer Music\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 688316046415684,
+					"parameters": {
+						"audio-file": "Kevin MacLeod - Itty Bitty 8 Bit NO COPYRIGHT 8-bit Music",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Komputer Music\""
+					}
+				}
+			],
+			"sid": 177011484087963
+		}
+	],
+	"sid": 166197914852387
+}

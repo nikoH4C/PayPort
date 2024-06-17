@@ -1,0 +1,88 @@
+{
+	"name": "Tutorial",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 509722009261590,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BackButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 627767834707191,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 803898064075371,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 672465875454614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 851043330732697,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "STARTbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 420992256401199,
+					"parameters": {
+						"layout": "Illegal"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 884228156324491,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 601112719930649
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 713041530388557
+		}
+	],
+	"sid": 244929608990485
+}

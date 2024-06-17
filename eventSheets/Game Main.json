@@ -1,0 +1,1222 @@
+{
+	"name": "Game Main",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 296631727485675,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sarah",
+					"sid": 762462630447345,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 650598050901132,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 496899306539311,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sarah"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 653491601667661,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 144921937903754,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 288839407550638,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 260277796527359,
+							"parameters": {
+								"object-to-create": "SarahApplication",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 638007951103050,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 376211271957141
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 457899247156374,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Maz",
+					"sid": 693510777195864,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 353128786447409,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 784659817324481,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Maz"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 828374201243024,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 374177823863875,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 691104362116421,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 509439698382152,
+							"parameters": {
+								"object-to-create": "MazApplication",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 175675460482916,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 450524196270382
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 447277274017785,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 834894370031510,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 200602425558555,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 559328932744910,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 157265932928334,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 930181100569427,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 194515309546394,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 527120423182581,
+							"parameters": {
+								"object-to-create": "Sprite19",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 921366389464237,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 737531009078853
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 692151567227763,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite11",
+					"sid": 975075270298558,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 168828190549984,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 163787299026861,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite11"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 264178639187807,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 729028933393670,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 328400896711955,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 335814994431976,
+							"parameters": {
+								"object-to-create": "Sprite20",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 777663963442248,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 579068570762397
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 533535850603566,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite12",
+					"sid": 289066625584710,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 950653014668209,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 589896625232204,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 792311993520850,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 757410393937464,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 960151347107714,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 893466522720411,
+							"parameters": {
+								"object-to-create": "Sprite21",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 687003759202352,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 773309303801192
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 184923408812307,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite13",
+					"sid": 470480364876962,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 408798126268128,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 883067990321385,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 208326916164313,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 952108863151191,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 616931336653462,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 101528614538041,
+							"parameters": {
+								"object-to-create": "Sprite22",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 877988038704610,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 174469210109855
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 841226714462485,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 361246016257997,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 982479075717629,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 480611595717765,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 573925499887582,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 490844010090774,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 520440399986362,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 786668757670519,
+							"parameters": {
+								"object-to-create": "Sprite23",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 664897740183052,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 446523098186356
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 303188276753852,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite15",
+					"sid": 544879896847716,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 163060825386090,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 449627846553302,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 874567534025125,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 203783345877828,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 416910086353342,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 302703414139201,
+							"parameters": {
+								"object-to-create": "Sprite24",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 457823602469468,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 606793712851158
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 991254912278125,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite16",
+					"sid": 215931598945238,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 408427763861016,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 588713414416740,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 823965420933986,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 873135970357903,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 858636507609096,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 440295553606067,
+							"parameters": {
+								"object-to-create": "Sprite25",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 448501407086792,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 471724512052020
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 342206085340751,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite17",
+					"sid": 590443487551122,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 913908025111536,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 753032292990116,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 948522184065432,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 897240626671709,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 424408036434981,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 940402168125973,
+							"parameters": {
+								"object-to-create": "Sprite26",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 463412105500060,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 226819711351474
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 515004247502686,
+					"parameters": {
+						"variable": "currentCharacter",
+						"comparison": 0,
+						"value": "11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite18",
+					"sid": 519383120036126,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 183582417581914,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 987046164314266,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Sprite18"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 525562978804071,
+							"parameters": {
+								"variable": "Occupation",
+								"value": "floor(random(1, 11))"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 855740317418936,
+							"parameters": {
+								"object-to-create": "Job",
+								"layer": "\"TOPTOP\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Job",
+							"sid": 193035599390649,
+							"parameters": {
+								"instance-variable": "JobType",
+								"value": "\"Occupation\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 787685665210919,
+							"parameters": {
+								"object-to-create": "Sprite27",
+								"layer": "\"Papers\"",
+								"x": "400",
+								"y": "270",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 407037928349038,
+							"parameters": {
+								"object-to-create": "PhotoButton",
+								"layer": "\"TOPTOP\"",
+								"x": "290",
+								"y": "220",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 173952055170990
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 849028057579702,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "PhotoButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 106443448113023,
+					"parameters": {
+						"layout": "CameraScene"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 752148927505152,
+					"parameters": {
+						"audio-file": "Woosh",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 420719675742584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 955486256506345,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "computer"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 596420160648945,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 412996496235222,
+							"parameters": {
+								"variable": "PhotoTaken",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 867529056592886,
+							"parameters": {
+								"layout": "ComputerScreen"
+							}
+						}
+					],
+					"sid": 396595414876060
+				}
+			]
+		}
+	],
+	"sid": 845226597808969
+}

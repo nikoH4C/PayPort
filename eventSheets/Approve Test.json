@@ -1,0 +1,53 @@
+{
+	"name": "Approve Test",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 662367155025525,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BackButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 489165318673675,
+					"parameters": {
+						"variable": "RANDOMIZED",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 281365557394036,
+					"parameters": {
+						"layout": "Illegal"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 102598250704086,
+					"parameters": {
+						"audio-file": "Click Sound Effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 647627676750117
+		}
+	],
+	"sid": 103026752100672
+}

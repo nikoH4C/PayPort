@@ -1,0 +1,29 @@
+{
+	"name": "Job",
+	"plugin-id": "Sprite",
+	"sid": 995588107387231,
+	"instanceVariables": [
+		{
+			"name": "JobType",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 199909954655939
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Chef",
+		"AI",
+		"Lover",
+		"Doctor",
+		"Mechanic",
+		"Reporter",
+		"Princess",
+		"SillyGoose",
+		"Triangle",
+		"Mom",
+		"Bully"
+	]
+}

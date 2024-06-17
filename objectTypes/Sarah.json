@@ -1,0 +1,81 @@
+{
+	"name": "Sarah",
+	"plugin-id": "Sprite",
+	"sid": 239780150249950,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 431,
+						"height": 1281,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3964034,
+						"collisionPoly": {
+							"points": [
+								0.988399071925754,
+								0.30991412958626074,
+								0.9419953596287703,
+								0.9531615925058547,
+								0.8631090487238979,
+								0.9797033567525371,
+								0.21809744779582363,
+								0.9773614363778298,
+								0.13225058004640367,
+								0.6752537080405933,
+								0.09976798143851506,
+								0.32162373145979706,
+								0.4988399071925754,
+								0.02263856362217018
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 431,
+						"height": 1281,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6618022,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 139865345662016,
+				"name": "Character 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			}
+		],
+		"subfolders": []
+	}
+}
